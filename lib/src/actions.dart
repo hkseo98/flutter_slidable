@@ -121,6 +121,7 @@ class SlidableAction extends StatelessWidget {
     this.autoClose = _kAutoClose,
     required this.onPressed,
     this.icon,
+    this.image,
     this.spacing = 4,
     this.label,
   })  : assert(flex > 0),
@@ -144,6 +145,7 @@ class SlidableAction extends StatelessWidget {
 
   /// An icon to display above the [label].
   final Icon? icon;
+  final Image? image;
 
   /// The space between [icon] and [label] if both set.
   ///
@@ -160,6 +162,12 @@ class SlidableAction extends StatelessWidget {
     if (icon != null) {
       children.add(
        icon
+      );
+    }
+    
+    if (icon != null) {
+      children.add(
+       image
       );
     }
 
