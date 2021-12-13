@@ -125,7 +125,7 @@ class SlidableAction extends StatelessWidget {
     this.spacing = 4,
     this.label,
   })  : assert(flex > 0),
-        assert(icon != null || label != null),
+        assert(icon != null || image != null || label != null),
         super(key: key);
 
   /// {@macro slidable.actions.flex}
