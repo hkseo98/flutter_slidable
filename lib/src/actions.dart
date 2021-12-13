@@ -165,7 +165,7 @@ class SlidableAction extends StatelessWidget {
       );
     }
     
-    if (icon != null) {
+    if (image != null) {
       children.add(
        image
       );
